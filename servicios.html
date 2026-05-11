@@ -103,20 +103,20 @@
 </head>
 <body class="bg-background text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
 <!-- TopNavBar -->
-<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto bg-surface dark:bg-surface-container-lowest border-b border-outline-variant dark:border-outline">
-<div class="flex items-center gap-2">
-<span class="text-headline-md font-headline-md text-primary dark:text-primary-fixed">Hogar Ideal</span>
-</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary-container transition-colors duration-200" href="index.html">Propiedades</a>
-<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-200" href="servicios.html">Servicios</a>
-<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary-container transition-colors duration-200" href="asesoria.html">Asesoría</a>
-<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary-container transition-colors duration-200" href="nosotros.html">Nosotros</a>
-</div>
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-full mx-auto bg-surface border-b border-outline-variant">
+<div class="flex items-center max-w-container-max mx-auto w-full justify-between">
+<span class="text-headline-md font-headline-md text-primary">Hogar Ideal</span>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-secondary hover:text-primary-container transition-colors duration-200 font-body-md text-body-md" href="index.html">Propiedades</a>
+<a class="text-secondary hover:text-primary-container transition-colors duration-200 font-body-md text-body-md" href="servicios.html">Servicios</a>
+<a class="text-secondary hover:text-primary-container transition-colors duration-200 font-body-md text-body-md" href="asesoria.html">Asesoría</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="nosotros.html">Nosotros</a>
+</nav>
 <button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm scale-95 active:opacity-80 transition-all">
             Contactar Experto
         </button>
-</nav>
+</div>
+</header>
 <!-- Hero Section -->
 <header class="relative pt-[120px] pb-section-padding px-gutter overflow-hidden bg-white">
 <div class="max-w-container-max mx-auto grid md:grid-cols-2 items-center gap-card-gap relative z-10">
