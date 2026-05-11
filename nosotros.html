@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-subtle {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#74777e",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#394857",
+                        "primary-fixed": "#d2e4ff",
+                        "on-tertiary-container": "#8a8b8b",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#b0c8eb",
+                        "primary-container": "#0a2540",
+                        "on-surface": "#181c1e",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "on-secondary-container": "#556474",
+                        "surface-container-high": "#e5e8eb",
+                        "surface": "#f7fafd",
+                        "on-primary-fixed": "#001c37",
+                        "on-secondary-fixed": "#0d1d2a",
+                        "on-background": "#181c1e",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#314865",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "tertiary-container": "#232424",
+                        "outline-variant": "#c4c6ce",
+                        "surface-container-low": "#f1f4f7",
+                        "surface-container": "#ebeef1",
+                        "on-primary-container": "#768dad",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "background": "#f7fafd",
+                        "on-surface-variant": "#43474d",
+                        "primary": "#000f22",
+                        "inverse-primary": "#b0c8eb",
+                        "surface-dim": "#d7dadd",
+                        "secondary": "#50606f",
+                        "surface-variant": "#e0e3e6",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "secondary-fixed": "#d4e4f6",
+                        "tertiary-fixed": "#e3e2e2",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#f7fafd",
+                        "on-error": "#ffffff",
+                        "tertiary": "#0d0f0f",
+                        "surface-container-highest": "#e0e3e6",
+                        "secondary-container": "#d1e1f4",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#eef1f4",
+                        "surface-tint": "#49607e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "card-gap": "32px",
+                        "container-max": "1280px",
+                        "section-padding": "80px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "display-xl": ["Manrope"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-full mx-auto bg-surface border-b border-outline-variant">
+<div class="flex items-center max-w-container-max mx-auto w-full justify-between">
+<span class="text-headline-md font-headline-md text-primary">Hogar Ideal</span>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-secondary hover:text-primary-container transition-colors duration-200 font-body-md text-body-md" href="index.html">Propiedades</a>
+<a class="text-secondary hover:text-primary-container transition-colors duration-200 font-body-md text-body-md" href="servicios.html">Servicios</a>
+<a class="text-secondary hover:text-primary-container transition-colors duration-200 font-body-md text-body-md" href="asesoria.html">Asesoría</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="nosotros.html">Nosotros</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded font-label-sm text-label-sm scale-95 active:opacity-80 transition-all">
+                Contactar Experto
+            </button>
+</div>
+</header>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="relative h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover" data-alt="A sophisticated corporate interior of a premium real estate agency in Samborondón. The space features floor-to-ceiling glass windows overlooking a manicured tropical landscape under soft afternoon sunlight. The interior design is minimalist with clean lines, navy blue architectural accents, and polished light gray stone floors. Professional atmosphere conveying institutional trust and architectural precision with a high-key light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlG8bsUf0etOAQUruFnLg2-ecN4_36-yvelEslNzBC334g1eNjcEQWPg7SV3GXEW71lefPPldSzhmTGzmuMaNf7jvomUTvCWbl4ATrQUgB9zvZR3QH9_FdpTfYPc6ucniVcA68GgiJpldj-loHLG6yYDJyEBiRiHkLzRcrP8f4rrA23yB4VVjYDyisTaz50J_A7FH0AvGQQ0k48IVqHvWW8SYGtHtt3DcLIpTbyrHJgAn4JNLypYv6BlmXQVSm-fBq_TwDFp1Brws"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+<div class="max-w-2xl">
+<h1 class="text-display-xl font-display-xl text-on-primary mb-6 drop-shadow-lg">Comprometidos con encontrar su hogar ideal</h1>
+<p class="text-body-lg font-body-lg text-on-primary opacity-90 mb-8 max-w-xl">Líderes en el mercado inmobiliario de lujo en Samborondón y Daule, ofreciendo una experiencia de asesoría sin precedentes.</p>
+</div>
+</div>
+</section>
+<!-- Company Story Section -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div>
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-widest block mb-2">Nuestra Historia</span>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-4">Trayectoria de Excelencia</h2>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+                            Fundada con la visión de elevar el estándar del sector inmobiliario en la zona de mayor plusvalía de Ecuador, Hogar Ideal nació como una respuesta a la necesidad de una atención verdaderamente personalizada y técnica. Durante años, hemos facilitado las transacciones más exclusivas en Samborondón y Daule, consolidándonos como el aliado estratégico de las familias más exigentes del país.
+                        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="p-6 bg-surface-container-low border border-outline-variant">
+<h3 class="text-headline-md font-headline-md text-primary mb-3">Misión</h3>
+<p class="text-body-md font-body-md text-secondary">Proveer soluciones inmobiliarias de alto nivel mediante un servicio ético, profesional y eficiente que supere las expectativas de nuestros clientes.</p>
+</div>
+<div class="p-6 bg-surface-container-low border border-outline-variant">
+<h3 class="text-headline-md font-headline-md text-primary mb-3">Visión</h3>
+<p class="text-body-md font-body-md text-secondary">Ser reconocidos como la firma inmobiliaria boutique de referencia para el mercado de lujo en la costa ecuatoriana por nuestra integridad.</p>
+</div>
+</div>
+</div>
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-lg border border-outline-variant">
+<img alt="" class="w-full h-full object-cover" data-alt="An architectural close-up of a modern corporate skyscraper building with reflective blue glass windows. The shot captures clean lines and geometric patterns against a clear bright sky. The aesthetic is modern corporate minimalism, emphasizing transparency and structural precision. High-contrast lighting highlights the textures of the steel and glass, reflecting the premium real estate identity of Samborondón." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2hkJcQmTYgDujJT6DABZqmlvMELzZgJ9kRXB7G_uOKXjdTNt6MxwieVkDLP5ufcpUCxCSjotbBWLoASB7GZIedTq039UFbZLYNlxE0FTr2B9f4fCD9ri73pR8gUuiWJP1CwBxCWOtJcJ5el8pgoo7_6hXXDBPs5bSS3idr-jC8CKeBLDAhXMaf08BR1YpUb7xJWfQMe8JqF1Kc1wwfrc2_wFLPe3Qt_mDWwZhlywfM9IOgyA-AQzSDK5mHFtibmMQ0oqdfEC6h1o"/>
+</div>
+</div>
+</section>
+<!-- Core Values Section -->
+<section class="bg-surface-container-low py-section-padding">
+<div class="max-w-container-max mx-auto px-gutter text-center mb-16">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-widest block mb-2">Valores Corporativos</span>
+<h2 class="text-headline-lg font-headline-lg text-primary">Nuestros Pilares Fundamentales</h2>
+</div>
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Value 1 -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant flex flex-col items-center text-center transition-all hover:border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">visibility</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-3">Transparencia</h3>
+<p class="text-body-md font-body-md text-secondary">Comunicación clara y honesta en cada etapa del proceso de compra o venta.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant flex flex-col items-center text-center transition-all hover:border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">workspace_premium</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-3">Exclusividad</h3>
+<p class="text-body-md font-body-md text-secondary">Acceso a las propiedades más selectas y un trato totalmente privado.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant flex flex-col items-center text-center transition-all hover:border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">verified_user</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-3">Confianza</h3>
+<p class="text-body-md font-body-md text-secondary">Construimos relaciones a largo plazo basadas en la lealtad y resultados.</p>
+</div>
+<!-- Value 4 -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant flex flex-col items-center text-center transition-all hover:border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">speed</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-3">Eficiencia</h3>
+<p class="text-body-md font-body-md text-secondary">Optimizamos su tiempo mediante procesos ágiles y tecnología avanzada.</p>
+</div>
+</div>
+</section>
+<!-- Statistics Section -->
+<section class="py-section-padding border-y border-outline-variant bg-primary-container text-on-primary">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div>
+<div class="text-[56px] font-display-xl text-primary-fixed mb-2">+850</div>
+<div class="text-label-sm font-label-sm uppercase tracking-widest opacity-80">Clientes Atendidos</div>
+</div>
+<div>
+<div class="text-[56px] font-display-xl text-primary-fixed mb-2">$120M</div>
+<div class="text-label-sm font-label-sm uppercase tracking-widest opacity-80">Propiedades Vendidas</div>
+</div>
+<div>
+<div class="text-[56px] font-display-xl text-primary-fixed mb-2">15</div>
+<div class="text-label-sm font-label-sm uppercase tracking-widest opacity-80">Años de Experiencia</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-widest block mb-2">Nuestro Equipo</span>
+<h2 class="text-headline-lg font-headline-lg text-primary">Expertos en el Mercado Local</h2>
+</div>
+<p class="max-w-md text-secondary text-body-md">
+                    Contamos con un equipo multidisciplinario de asesores certificados, dedicados a brindarle un servicio de asesoría inmobiliaria de guante blanco.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-card-gap">
+<!-- Advisor 1 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container mb-6 relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a male real estate executive in a sharp navy blue tailored suit. He is standing in a brightly lit, modern minimalist office environment. The lighting is soft and high-key, creating a clean light-mode aesthetic. His expression is confident and approachable, embodying corporate professionalism and institutional trust. Minimalist background with subtle glass reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0U2MBqctN_39m2lPJo9CidVVNKztnTa6pqyAf2Qb7NRZ27UetHYE3v3YKIJuNZcn_UU9FJTwcx2CrtveizYTAx3nNNQ-c1eSNcFGOtx53LHjPnhpgGsgppr0bqe5CCtcS7QPIhGSSuGK83tZLCNLkW-yDzphBDEM2XWETIXtt5hiISvBzlSfzYrj4prSwp8v0P8yAG_tqG_q3pYIsSTsK0ZwpCyE68V74qOoiRWinJAmPdu8fO3pobg-S10AbffO_bKqo3YeiTI8"/>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary">Andrés Mendoza</h3>
+<p class="text-label-sm font-label-sm text-secondary uppercase tracking-widest mb-4">Director Comercial</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors">alternate_email</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors">phone_in_talk</span>
+</div>
+</div>
+<!-- Advisor 2 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container mb-6 relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a female real estate advisor wearing a sophisticated slate gray blazer over a white blouse. She has a warm, professional smile and is positioned in a high-end corporate setting with soft bokeh architectural backgrounds. The lighting is bright and modern, consistent with a premium corporate minimalist aesthetic. Image conveys reliability, expertise, and high-level customer service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKtwTVoyOU27evMc0lLEMxMIimzW0D1I03TtMfGB1bg6vkoW2EiJyjfQtJjSOLo1jcRnbwZQT9ojjaKwGTCuRt80bmRTCgy3GQiQoZwUj9S_pPgVL0Th0u8xJngRncrwAHSzQn8EMXoX9xYqPRis0QPWG04xecq6groFviXV9Aie8RdmN_41dNnk6ChHlSC9R-MaNaLLHVnWvVx0QT7KwtGzNcOu7aaOlhtbuXCdBRh5c1w04NONxLcf1ZZscz_7CHXG1q-KMJF2M"/>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary">Valeria Santillán</h3>
+<p class="text-label-sm font-label-sm text-secondary uppercase tracking-widest mb-4">Especialista en Lujo</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors">alternate_email</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors">phone_in_talk</span>
+</div>
+</div>
+<!-- Advisor 3 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container mb-6 relative">
+<img alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A formal professional photograph of a male realtor in a premium corporate setting. He is dressed in business formal attire, conveying authority and market knowledge. The background features clean minimalist architectural elements with a soft focus on a light gray and navy color palette. The mood is serene, successful, and professional, characteristic of an elite real estate agency in an upscale district." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0OQS2X3NPZSUuu2bD0Z6dVffRBa5CiBc_DAgdvy1PEkn8_4p5g4GsaHy8ieyvFc1EKP7Si8_4PVllG2bCsD8UvRIVGlplWCmZc0XCxenauiLsN05WRj4Gf8gm8m6UCp5Gih_k_DU7IHH04E8m5xo77VAD2wWHPIBq7rjNL6d2-XO2-i2kdX2Uufy9O5UXIAPEZnNyUbmPz7DkKSw7WRzOf-Y4gbsDMu96cQKtQwwV2l7V8xMfVtihfIvi4JQuMEMTlxlQXYN2g_4"/>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary">Ricardo Vera</h3>
+<p class="text-label-sm font-label-sm text-secondary uppercase tracking-widest mb-4">Consultor de Inversiones</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors">alternate_email</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors">phone_in_talk</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-[120px] px-gutter bg-surface">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-display-xl font-display-xl text-primary mb-8">Descubra una nueva forma de comprar propiedades</h2>
+<p class="text-body-lg font-body-lg text-secondary mb-12 max-w-2xl mx-auto">Permítanos ser su guía en la búsqueda de su próxima inversión o el hogar donde construirá sus mejores recuerdos.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded font-label-sm text-label-sm transition-all hover:bg-primary-container active:scale-95">
+                        Agendar Consultoría Gratuita
+                    </button>
+<button class="border border-primary text-primary px-10 py-4 rounded font-label-sm text-label-sm transition-all hover:bg-primary hover:text-on-primary active:scale-95">
+                        Ver Catálogo de Lujo
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-padding px-gutter flex flex-col items-center gap-unit text-center bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto w-full">
+<span class="text-headline-md font-headline-md text-on-primary block mb-8">Hogar Ideal</span>
+<div class="flex flex-wrap justify-center gap-8 mb-12">
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Privacidad</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Términos de Servicio</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Inversiones</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Soporte</a>
+</div>
+<div class="pt-8 border-t border-on-primary-container/20 w-full flex flex-col items-center">
+<p class="font-label-sm text-label-sm opacity-80">© 2024 Hogar Ideal. Bienes Raíces de Lujo en Ecuador.</p>
+<div class="mt-4 flex gap-6">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors">mail</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors">share</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

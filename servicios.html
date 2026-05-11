@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Servicios | Hogar Ideal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#ebeef1",
+                    "on-tertiary-container": "#8a8b8b",
+                    "inverse-surface": "#2d3133",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "inverse-primary": "#b0c8eb",
+                    "surface-container-high": "#e5e8eb",
+                    "primary-container": "#0a2540",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "secondary-container": "#d1e1f4",
+                    "primary-fixed": "#d2e4ff",
+                    "outline-variant": "#c4c6ce",
+                    "secondary-fixed-dim": "#b8c8da",
+                    "outline": "#74777e",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#b0c8eb",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-dim": "#d7dadd",
+                    "on-secondary-fixed-variant": "#394857",
+                    "background": "#f7fafd",
+                    "surface-bright": "#f7fafd",
+                    "on-surface-variant": "#43474d",
+                    "primary": "#000f22",
+                    "on-primary-fixed": "#001c37",
+                    "inverse-on-surface": "#eef1f4",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#556474",
+                    "surface-container-low": "#f1f4f7",
+                    "secondary-fixed": "#d4e4f6",
+                    "secondary": "#50606f",
+                    "tertiary-container": "#232424",
+                    "surface-tint": "#49607e",
+                    "on-background": "#181c1e",
+                    "tertiary-fixed": "#e3e2e2",
+                    "tertiary": "#0d0f0f",
+                    "surface-container-highest": "#e0e3e6",
+                    "surface-variant": "#e0e3e6",
+                    "on-primary-fixed-variant": "#314865",
+                    "surface": "#f7fafd",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#0d1d2a",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#181c1e",
+                    "on-primary-container": "#768dad"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "card-gap": "32px",
+                    "container-max": "1280px",
+                    "section-padding": "80px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-xl": ["Manrope"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Manrope"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "display-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto bg-surface dark:bg-surface-container-lowest border-b border-outline-variant dark:border-outline">
+<div class="flex items-center gap-2">
+<span class="text-headline-md font-headline-md text-primary dark:text-primary-fixed">Hogar Ideal</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary-container transition-colors duration-200" href="index.html">Propiedades</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-200" href="servicios.html">Servicios</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary-container transition-colors duration-200" href="asesoria.html">Asesoría</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary-container transition-colors duration-200" href="nosotros.html">Nosotros</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm scale-95 active:opacity-80 transition-all">
+            Contactar Experto
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-[120px] pb-section-padding px-gutter overflow-hidden bg-white">
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 items-center gap-card-gap relative z-10">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm text-on-primary-container tracking-widest uppercase mb-4 block">Excelencia Inmobiliaria</span>
+<h1 class="font-display-xl text-display-xl text-primary mb-6">Servicios diseñados para simplificar la compra de su hogar</h1>
+<p class="font-body-lg text-body-lg text-secondary mb-8">Nuestra asesoría integral elimina la complejidad del proceso inmobiliario, permitiéndole enfocarse únicamente en elegir el futuro de su familia en Ecuador.</p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded font-label-sm text-label-sm hover:opacity-90 transition-opacity">Ver Detalles de Asesoría</button>
+<button class="border border-outline text-primary px-8 py-4 rounded font-label-sm text-label-sm hover:bg-surface-container transition-colors">Nuestra Trayectoria</button>
+</div>
+</div>
+<div class="relative h-[500px] rounded-xl overflow-hidden shadow-sm">
+<img alt="Modern Architecture" class="w-full h-full object-cover" data-alt="A photograph of a high-end, minimalist architectural structure with clean lines and expansive glass windows. The setting is a serene residential area during a soft, blue-hour twilight that casts a calm, professional glow. The composition emphasizes geometric precision and modern luxury, utilizing a palette of deep navy shadows and cool gray concrete tones to align with a corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWOZb_syyyITjBnpG04h8TyqoIvPhPnOlgJScqC8cdx3qlq9t2OPcoucWCLCoC-I9ONNjKmNlutUjv0Wc3g_VUeeVgIlUlH3czJIgoOkrwQ3-tQF4vxCVbhEUsiCpPfV9c7QLci8m5Qpnf_-wYzL5Xi73fGhI6aMpNhcFoB_01BNT8PQpZTWNp2ui5CwtNw6WYfpNYq2qDV8-JzeEMoJpdpkO7-tJdaNQ2Kab5LUAb1XXg2kUliOAUensXF2YkD876gMf2wkxjETM"/>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -z-0 opacity-50"></div>
+</header>
+<!-- Services Grid -->
+<section class="py-section-padding px-gutter bg-surface-bright">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Soluciones Integrales de Guante Blanco</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-card-gap">
+<!-- Card 1 -->
+<div class="bg-white p-8 border border-surface-container-highest hover:shadow-[0px_10px_30px_rgba(10,37,64,0.05)] transition-all group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary" data-icon="gavel">gavel</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Verificación legal de propiedades</h3>
+<p class="font-body-md text-body-md text-secondary">Análisis exhaustivo de títulos, gravámenes y solvencia municipal para garantizar una inversión libre de riesgos legales.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-8 border border-surface-container-highest hover:shadow-[0px_10px_30px_rgba(10,37,64,0.05)] transition-all group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary" data-icon="search_insights">search_insights</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Búsqueda personalizada</h3>
+<p class="font-body-md text-body-md text-secondary">Filtramos el mercado exclusivo para presentarle solo aquellas opciones que se alinean perfectamente con su estilo de vida.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 border border-surface-container-highest hover:shadow-[0px_10px_30px_rgba(10,37,64,0.05)] transition-all group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Asesoría financiera</h3>
+<p class="font-body-md text-body-md text-secondary">Gestión de créditos hipotecarios preferenciales y optimización de flujos de pago con las principales entidades bancarias.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-8 border border-surface-container-highest hover:shadow-[0px_10px_30px_rgba(10,37,64,0.05)] transition-all group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary" data-icon="description">description</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Gestión documental</h3>
+<p class="font-body-md text-body-md text-secondary">Manejo profesional de trámites notariales, registros y minutas para un proceso administrativo fluido y sin errores.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-white p-8 border border-surface-container-highest hover:shadow-[0px_10px_30px_rgba(10,37,64,0.05)] transition-all group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary" data-icon="handshake">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Acompañamiento en negociaciones</h3>
+<p class="font-body-md text-body-md text-secondary">Representación experta para asegurar el mejor valor de mercado y condiciones contractuales favorables para usted.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-white p-8 border border-surface-container-highest hover:shadow-[0px_10px_30px_rgba(10,37,64,0.05)] transition-all group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary" data-icon="calendar_month">calendar_month</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Coordinación de visitas privadas</h3>
+<p class="font-body-md text-body-md text-secondary">Organización logística de recorridos personalizados en horarios flexibles, priorizando su privacidad y comodidad.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-section-padding px-gutter bg-white overflow-hidden">
+<div class="max-w-container-max mx-auto">
+<div class="mb-20">
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-widest block mb-2">Metodología</span>
+<h2 class="font-display-xl text-display-xl text-primary">Un proceso estructurado para su tranquilidad</h2>
+</div>
+<div class="relative">
+<!-- Timeline Line -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-surface-container-highest"></div>
+<div class="grid md:grid-cols-5 gap-card-gap">
+<!-- Step 1 -->
+<div class="relative z-10">
+<div class="w-24 h-24 rounded-full bg-white border-2 border-primary-container flex items-center justify-center mb-6 text-primary font-headline-md shadow-sm">01</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Consulta inicial</h4>
+<p class="font-body-md text-body-md text-secondary">Definimos sus objetivos, presupuesto y preferencias de estilo de vida.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10">
+<div class="w-24 h-24 rounded-full bg-white border-2 border-surface-container-highest flex items-center justify-center mb-6 text-outline font-headline-md shadow-sm">02</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Selección de propiedades</h4>
+<p class="font-body-md text-body-md text-secondary">Curamos un portafolio exclusivo que cumple con sus estándares más altos.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10">
+<div class="w-24 h-24 rounded-full bg-white border-2 border-surface-container-highest flex items-center justify-center mb-6 text-outline font-headline-md shadow-sm">03</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Visitas guiadas</h4>
+<p class="font-body-md text-body-md text-secondary">Recorridos privados y detallados por cada propiedad seleccionada.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative z-10">
+<div class="w-24 h-24 rounded-full bg-white border-2 border-surface-container-highest flex items-center justify-center mb-6 text-outline font-headline-md shadow-sm">04</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Negociación</h4>
+<p class="font-body-md text-body-md text-secondary">Aseguramos las condiciones óptimas mediante estrategia y experiencia.</p>
+</div>
+<!-- Step 5 -->
+<div class="relative z-10">
+<div class="w-24 h-24 rounded-full bg-white border-2 border-surface-container-highest flex items-center justify-center mb-6 text-outline font-headline-md shadow-sm">05</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Cierre de compra</h4>
+<p class="font-body-md text-body-md text-secondary">Finalización de trámites y entrega de llaves de su nuevo hogar.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Section (Dark Block) -->
+<section class="py-section-padding px-gutter">
+<div class="max-w-container-max mx-auto bg-primary-container rounded-lg p-16 md:p-24 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary opacity-20 -mr-32 -mt-32 rounded-full"></div>
+<div class="relative z-10 max-w-3xl">
+<h2 class="font-display-xl text-display-xl text-on-primary mb-8">Nuestra promesa de valor: Ahorro de Tiempo y Seguridad</h2>
+<div class="grid md:grid-cols-2 gap-12">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-fixed text-4xl" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Eficiencia Radical</h4>
+<p class="font-body-md text-body-md text-on-primary-container">Reducimos el tiempo de búsqueda en un 70% mediante tecnología de filtrado y redes exclusivas.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-fixed text-4xl" data-icon="verified_user">verified_user</span>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Cero Riesgos</h4>
+<p class="font-body-md text-body-md text-on-primary-container">Cada transacción está blindada legalmente para proteger su patrimonio y legado familiar.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<div class="py-12 px-gutter bg-surface-container-lowest border-y border-outline-variant">
+<div class="max-w-container-max mx-auto flex flex-wrap justify-center items-center gap-16 grayscale opacity-40">
+<span class="font-display-xl text-headline-md tracking-tighter italic">BANK LOGO 1</span>
+<span class="font-display-xl text-headline-md tracking-tighter italic">DEVELOPER A</span>
+<span class="font-display-xl text-headline-md tracking-tighter italic">ESTATE TRUST</span>
+<span class="font-display-xl text-headline-md tracking-tighter italic">LUXURY AUTH</span>
+</div>
+</div>
+<!-- CTA Banner -->
+<section class="py-section-padding px-gutter bg-white">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">¿Listo para encontrar su próxima propiedad?</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-10">Permítanos acompañarle en esta importante decisión con la discreción y profesionalismo que usted merece.</p>
+<button class="bg-primary text-on-primary px-12 py-5 rounded-lg font-headline-md text-headline-md hover:scale-105 transition-transform">
+                Agende una asesoría personalizada
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-section-padding px-gutter flex flex-col items-center gap-unit text-center bg-primary dark:bg-primary-container">
+<div class="max-w-container-max w-full grid md:grid-cols-4 gap-12 text-left mb-12">
+<div class="col-span-1 md:col-span-2">
+<span class="text-headline-md font-headline-md text-on-primary mb-6 block">Hogar Ideal</span>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant max-w-sm">La consultoría inmobiliaria de referencia para el mercado de lujo en Ecuador, enfocada en la excelencia y la integridad.</p>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-primary mb-4 block uppercase">Navegación</span>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Propiedades</a></li>
+<li><a class="font-body-md text-body-md text-on-primary font-bold" href="#">Servicios</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Inversiones</a></li>
+</ul>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-primary mb-4 block uppercase">Legal</span>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Privacidad</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Términos de Servicio</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Soporte</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-on-primary-fixed-variant w-full text-center">
+<p class="font-label-sm text-label-sm text-on-primary-fixed-variant">© 2024 Hogar Ideal. Bienes Raíces de Lujo en Ecuador.</p>
+</div>
+</footer>
+</body></html>
