@@ -1,0 +1,380 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Hogar Ideal - Asesoría Inmobiliaria</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#d7dadd",
+                    "tertiary": "#0d0f0f",
+                    "secondary-fixed-dim": "#b8c8da",
+                    "surface-container-high": "#e5e8eb",
+                    "on-secondary-container": "#556474",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#50606f",
+                    "tertiary-fixed": "#e3e2e2",
+                    "surface-variant": "#e0e3e6",
+                    "outline": "#74777e",
+                    "on-primary": "#ffffff",
+                    "background": "#f7fafd",
+                    "surface-container": "#ebeef1",
+                    "surface-container-low": "#f1f4f7",
+                    "primary-fixed": "#d2e4ff",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#d1e1f4",
+                    "surface-tint": "#49607e",
+                    "on-secondary-fixed": "#0d1d2a",
+                    "surface-bright": "#f7fafd",
+                    "inverse-on-surface": "#eef1f4",
+                    "outline-variant": "#c4c6ce",
+                    "inverse-surface": "#2d3133",
+                    "primary-fixed-dim": "#b0c8eb",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-primary-container": "#768dad",
+                    "tertiary-container": "#232424",
+                    "inverse-primary": "#b0c8eb",
+                    "primary-container": "#0a2540",
+                    "on-error": "#ffffff",
+                    "primary": "#000f22",
+                    "on-tertiary-container": "#8a8b8b",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#001c37",
+                    "on-secondary-fixed-variant": "#394857",
+                    "surface": "#f7fafd",
+                    "on-surface-variant": "#43474d",
+                    "surface-container-highest": "#e0e3e6",
+                    "on-surface": "#181c1e",
+                    "secondary-fixed": "#d4e4f6",
+                    "on-background": "#181c1e",
+                    "on-primary-fixed-variant": "#314865"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "section-padding": "80px",
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "card-gap": "32px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "label-sm": [
+                            "Inter"
+                    ],
+                    "display-xl": [
+                            "Manrope"
+                    ],
+                    "headline-lg": [
+                            "Manrope"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Manrope"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface-container-lowest font-body-md text-body-md docked full-width top-0 border-b border-outline-variant dark:border-outline flat no shadows fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="text-headline-md font-headline-md text-primary dark:text-primary-fixed">Hogar Ideal</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary-container transition-colors duration-200" href="#">Propiedades</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container transition-colors duration-200" href="#">Servicios</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container transition-colors duration-200" href="#">Asesoría</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container transition-colors duration-200" href="#">Nosotros</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-sm text-label-sm scale-95 active:opacity-80 transition-all hover:opacity-90">
+            Contactar Experto
+        </button>
+</nav>
+<!-- Hero Section -->
+<section class="pt-32 pb-section-padding px-gutter max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-16 min-h-[80vh]">
+<div class="flex-1 space-y-8">
+<h1 class="font-display-xl text-display-xl text-primary">Encuentra el hogar que mereces en Samborondón y Daule</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">Asesoría inmobiliaria profesional para quienes buscan seguridad, exclusividad y un proceso sin complicaciones.</p>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-body-md text-body-md hover:opacity-90 transition-opacity">Agenda tu asesoría</button>
+</div>
+<div class="flex-1 w-full relative">
+<div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm border border-outline-variant">
+<img alt="Modern luxury house in Samborondón" class="w-full h-full object-cover" data-alt="A striking modern architectural home featuring expansive glass windows and sleek white facades, situated in a pristine, manicured gated community. The scene is bathed in bright, clear daylight with a cloudless blue sky, emphasizing a light-mode corporate luxury aesthetic. Deep navy blue accent elements subtly frame the composition, conveying stability and high-end exclusivity. The overall mood is serene, secure, and aspirational." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoIEYRS-Y-iQj6rf6F8kjVzd3PGNAOOo0wPlVo4fPBvoam4sbbOmKf-g69XrmqiyiJR6Ma5LGmbTthsOzxRiNxqc7LedK0-9YIZQ3MZAbx_x8N8w8TSYjWkXN6otR-vONDZbbkpGoEU1hSiDOatyTAaHrCbyWQcEy6_ZQfBRIP8QwlwnIPXSOuaSQEiGZAUsdNnAiIT5RZDj36vz19DZOwYTN3Sf4UU3sdjNxaGQTaCmEf-eVQTMD8a6URoOT_D5qw83WI8BgUwe8">
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface p-6 rounded-lg border border-outline-variant shadow-sm hidden md:block">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="verified_user">verified_user</span>
+<div>
+<div class="font-label-sm text-label-sm text-secondary">PROPIEDADES</div>
+<div class="font-headline-md text-headline-md text-primary">100% Verificadas</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Description -->
+<section class="py-section-padding bg-surface-container-lowest border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter text-center max-w-3xl space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-primary">Simplificamos la compra de su hogar ideal</h2>
+<p class="font-body-lg text-body-lg text-secondary">Entendemos que su tiempo es valioso. Nuestro servicio de asesoría inmobiliaria filtra el mercado para presentarle únicamente opciones que cumplen con nuestros estrictos estándares de calidad, seguridad y exclusividad, garantizando una transacción transparente y eficiente.</p>
+</div>
+</section>
+<!-- Benefits Grid -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-8 border border-outline-variant rounded-xl bg-surface hover:shadow-[0_10px_30px_rgba(10,37,64,0.05)] transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="shield">shield</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Propiedades Verificadas</h3>
+<p class="font-body-md text-body-md text-secondary">Riguroso proceso de revisión legal y estructural de cada inmueble antes de presentarlo.</p>
+</div>
+<div class="p-8 border border-outline-variant rounded-xl bg-surface hover:shadow-[0_10px_30px_rgba(10,37,64,0.05)] transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="schedule">schedule</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Ahorro de Tiempo</h3>
+<p class="font-body-md text-body-md text-secondary">Filtramos las opciones según sus necesidades exactas para optimizar sus visitas.</p>
+</div>
+<div class="p-8 border border-outline-variant rounded-xl bg-surface hover:shadow-[0_10px_30px_rgba(10,37,64,0.05)] transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="check_circle">check_circle</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Proceso Simplificado</h3>
+<p class="font-body-md text-body-md text-secondary">Gestión integral desde la búsqueda inicial hasta la firma final de escrituras.</p>
+</div>
+<div class="p-8 border border-outline-variant rounded-xl bg-surface hover:shadow-[0_10px_30px_rgba(10,37,64,0.05)] transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="person">person</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Asesoría Personalizada</h3>
+<p class="font-body-md text-body-md text-secondary">Un experto dedicado exclusivamente a encontrar su residencia perfecta.</p>
+</div>
+</div>
+</section>
+<!-- Featured Properties -->
+<section class="py-section-padding bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Propiedades Destacadas</h2>
+<p class="font-body-md text-body-md text-secondary">Selección exclusiva en las mejores zonas.</p>
+</div>
+<button class="hidden md:block font-label-sm text-label-sm text-primary uppercase border-b border-primary pb-1">Ver todas</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Property 1 -->
+<div class="bg-surface rounded-xl border border-outline-variant overflow-hidden hover:shadow-[0_10px_30px_rgba(10,37,64,0.05)] transition-shadow group">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Villa in La Puntilla" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A bright, minimalist luxury villa interior in La Puntilla featuring an open-concept living space with floor-to-ceiling windows. The room is flooded with natural daylight, highlighting the clean lines, light gray stone floors, and contemporary navy blue furniture accents. The aesthetic is highly polished and corporate, suitable for a high-net-worth real estate portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCejnmKGXIx3TfqqwDPqvmo3fz5_9LPvSSBkmqx1N3HYMQwZRlbrAKl7JkOeclhjehFJ0szVP7ywLqDjX0VMbCJ4ftWjI98uEmUT4xk3fZFHnp03Z_zkjbdWn8GtLqKSWRpvoYG42qZCbbq0ce18UJc1ewE6r2VGImuJvjtwTOrI90j2yJqTJ1XW9nQ_SsbeCfTiIdfgGJr0tDRR0IX_87_hXwNr7_OFoEKPzHEABAPVb5-lUOkErVWhOW3ZRmhn0qDGlhuMptEmAI">
+<div class="absolute top-4 left-4 bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant">
+<span class="font-label-sm text-label-sm text-primary">Exclusivo</span>
+</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Villa Moderna</h4>
+<p class="font-body-md text-body-md text-secondary mb-4">La Puntilla, Samborondón</p>
+<div class="flex items-center gap-4 text-secondary mb-6 border-b border-outline-variant pb-4">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="bed">bed</span> 4</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="shower">shower</span> 4.5</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="square_foot">square_foot</span> 350m²</div>
+</div>
+<div class="font-headline-md text-headline-md text-primary">$450,000</div>
+</div>
+</div>
+<!-- Property 2 -->
+<div class="bg-surface rounded-xl border border-outline-variant overflow-hidden hover:shadow-[0_10px_30px_rgba(10,37,64,0.05)] transition-shadow group">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="House in Isla Mocolí" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An expansive, ultra-modern luxury residence exterior located in Isla Mocolí, set against a pristine, cloudless sky. The architecture features striking geometric forms, white stucco walls, and large expanses of reflective glass. Soft, high-key lighting emphasizes the clean, corporate minimalist aesthetic. Subtle navy blue elements are present in the manicured landscaping details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb1Nge7gmqRVDqxoFQTgRBXE2h96LjCbqsjd0p6aa8qJeFC62Vtu-NefH9ECiiVK8MY30GxhRSH2h1JTeKceKV1pxQjshWslCBrh_QEOtjR-ML_AQ9M4BggDv7QYHL8IrKAVPWyvg9r3pQetiUD1oIes7b8WQ-CkN9_BVQwMyvy-a3BW_tHdPG6JCz-mLjo8rCrskDD7-2H-GURwixbwy5hZYgNGdk4c-rZhh_YYMxkpl8_oaQWrMmuPNBMcLU-VwMXnf2YeyKiLA">
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Casa de Lujo</h4>
+<p class="font-body-md text-body-md text-secondary mb-4">Isla Mocolí</p>
+<div class="flex items-center gap-4 text-secondary mb-6 border-b border-outline-variant pb-4">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="bed">bed</span> 5</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="shower">shower</span> 6</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="square_foot">square_foot</span> 480m²</div>
+</div>
+<div class="font-headline-md text-headline-md text-primary">$620,000</div>
+</div>
+</div>
+<!-- Property 3 -->
+<div class="bg-surface rounded-xl border border-outline-variant overflow-hidden hover:shadow-[0_10px_30px_rgba(10,37,64,0.05)] transition-shadow group">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Residence in Daule" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A pristine, light-filled contemporary kitchen and dining area in a high-end Daule residence. The space is characterized by sleek white cabinetry, a large marble island, and subtle slate blue barstools. Natural light pours in from large windows, creating a clean, corporate, and minimalist atmosphere that speaks to modern luxury living." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWR8yX9St25cmFl52iLg9IhobGrBLv6rZEfkaPCfqgsk5LMi5zwKDAZVRYP2WYlT9LFlWJlCuc7_IW9bWpAsIiQWr4623ym0CRtQPCA-yyIH0a6wALGFP_V0xO6WS7fSnqqgb278oNHNUjBr6qjEk-bdYcz3UC6J8Nub9bNYt2X7zMebr0qnCL8lmZtcpFiy2EsayioOYugvt4Gd_bI0k8bPzT8to4K3uJjv5WuUemKQpmnpr_qliz7sG8RvQYjcIUtlE8oh3leVo">
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Residencia Exclusiva</h4>
+<p class="font-body-md text-body-md text-secondary mb-4">Daule (Vía Salitre)</p>
+<div class="flex items-center gap-4 text-secondary mb-6 border-b border-outline-variant pb-4">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="bed">bed</span> 3</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="shower">shower</span> 3.5</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="square_foot">square_foot</span> 290m²</div>
+</div>
+<div class="font-headline-md text-headline-md text-primary">$380,000</div>
+</div>
+</div>
+<!-- Property 4 -->
+<div class="bg-surface rounded-xl border border-outline-variant overflow-hidden hover:shadow-[0_10px_30px_rgba(10,37,64,0.05)] transition-shadow group">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Home in Urbanización Privada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully designed outdoor living area and pool of a contemporary home in a private urbanization. The scene is shot during bright midday with sharp, clean shadows. The minimalist design features geometric concrete pavers, a pristine rectangular pool, and elegant white lounge furniture. The overall mood is luxurious, calm, and institutional in its perfection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-fBJHvXshETbWGB0vcQWcOUJ9NpjTc8Bou15vksIwWHBypNC0AmuFGt-7x97r0JESfOls9Y4jxpwQsQZHGfnVQi6pqiqpZv_b5r-H3fJkRzrgYOnQ6Gf6Qg8tNsz2iYztqCrRe558vTxVO5JMYU1QkxnbjmvtKElkl871pVnOiWxMhy_0BBKOj3oYMjMSwaDI23DcJ_QCcnvUY_-mtabrQws4FHFbjab-rAk7-82yIQRiMuE4qhtk1FjSRxQ1lCWj-_3CE34q8SQ">
+<div class="absolute top-4 left-4 bg-surface-dim/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant">
+<span class="font-label-sm text-label-sm text-primary">Nuevo Ingreso</span>
+</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Hogar Contemporáneo</h4>
+<p class="font-body-md text-body-md text-secondary mb-4">Urbanización Privada</p>
+<div class="flex items-center gap-4 text-secondary mb-6 border-b border-outline-variant pb-4">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="bed">bed</span> 4</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="shower">shower</span> 4</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="square_foot">square_foot</span> 410m²</div>
+</div>
+<div class="font-headline-md text-headline-md text-primary">$510,000</div>
+</div>
+</div>
+</div>
+<button class="md:hidden mt-8 w-full text-center font-label-sm text-label-sm text-primary uppercase border border-primary py-3 rounded-full">Ver todas las propiedades</button>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto border-t border-outline-variant">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-16">Confianza respaldada por la experiencia</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="p-8 border border-outline-variant rounded-xl bg-surface">
+<div class="flex gap-1 mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-secondary mb-6 italic">"El nivel de profesionalismo de Hogar Ideal es excepcional. No solo encontraron la propiedad perfecta en Samborondón, sino que manejaron todo el proceso legal con una eficiencia que me permitió no descuidar mi empresa."</p>
+<div class="font-headline-md text-headline-md text-primary">Roberto M.</div>
+<div class="font-label-sm text-label-sm text-secondary">Director Ejecutivo</div>
+</div>
+<div class="p-8 border border-outline-variant rounded-xl bg-surface">
+<div class="flex gap-1 mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-secondary mb-6 italic">"Buscábamos seguridad y rapidez. El equipo filtró excelentes opciones en Isla Mocolí y nos asesoró de manera transparente. Una experiencia verdaderamente corporativa y de alto nivel en bienes raíces."</p>
+<div class="font-headline-md text-headline-md text-primary">Familia Viteri</div>
+<div class="font-label-sm text-label-sm text-secondary">Inversionistas</div>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="py-section-padding bg-surface-container-highest">
+<div class="max-w-3xl mx-auto px-gutter">
+<div class="bg-surface p-12 rounded-xl border border-outline-variant shadow-sm">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-2">¿Listo para dar el siguiente paso?</h2>
+<p class="font-body-md text-body-md text-secondary text-center mb-10">Agende una consulta privada con uno de nuestros asesores expertos.</p>
+<form class="space-y-6">
+<div>
+<label class="sr-only" for="name">Nombre Completo</label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline-variant px-4 py-4 font-body-md text-body-md text-primary focus:ring-0 focus:border-primary transition-colors" id="name" placeholder="Nombre Completo" type="text">
+</div>
+<div>
+<label class="sr-only" for="email">Correo Electrónico</label>
+<input class="w-full bg-surface-container-low border-0 border-b border-outline-variant px-4 py-4 font-body-md text-body-md text-primary focus:ring-0 focus:border-primary transition-colors" id="email" placeholder="Correo Electrónico" type="email">
+</div>
+<div>
+<label class="sr-only" for="message">Mensaje (Opcional)</label>
+<textarea class="w-full bg-surface-container-low border-0 border-b border-outline-variant px-4 py-4 font-body-md text-body-md text-primary focus:ring-0 focus:border-primary transition-colors resize-none" id="message" placeholder="¿En qué zona busca su propiedad?" rows="3"></textarea>
+</div>
+<div class="pt-4 text-center">
+<button class="bg-primary text-on-primary px-12 py-4 rounded-full font-body-md text-body-md hover:opacity-90 transition-opacity w-full md:w-auto" type="button">Solicitar Asesoría</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container font-label-sm text-label-sm full-width flat no shadows w-full py-section-padding px-gutter flex flex-col items-center gap-unit text-center">
+<div class="text-headline-md font-headline-md text-on-primary mb-6">Hogar Ideal</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8">
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Privacidad</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Términos de Servicio</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Inversiones</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Soporte</a>
+</div>
+<div class="text-on-primary-fixed-variant">© 2024 Hogar Ideal. Bienes Raíces de Lujo en Ecuador.</div>
+</footer>
+
+
+</body></html>
