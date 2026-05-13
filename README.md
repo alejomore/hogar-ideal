@@ -42,6 +42,50 @@ URL del Sitio Web
 https://alejomore.github.io/hogar-ideal/index.html
 
 Captura del Sitio Web
+![Captura del sitio web](assets/images/captura-home.png)
 
+Tecnologías Utilizadas
+HTML5
+Tailwind CSS
+Google Fonts
+Material Symbols
+GitHub Pages
 
-![Captura del sitio web](assets
+Estructura del Proyecto
+hogar-ideal/
+│
+├── index.html
+├── servicios.html
+├── asesoria.html
+├── nosotros.html
+│
+├── assets/
+│   ├── images/
+│   └── styles/
+│
+├── README.md
+└── estandar_codificacion_css.md
+
+Características Principales
+Diseño Responsive
+
+Compatible con:
+
+Desktop
+Tablets
+Smartphones
+Navegación Moderna
+
+Barra de navegación fija con acceso a:
+
+Propiedades
+Servicios
+Asesoría
+Nosotros
+Diseño Corporativo Premium
+
+Inspirado en:
+
+Inmobiliarias de lujo
+Interfaces minimalistas
+Estética institucional moderna
