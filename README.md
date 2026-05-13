@@ -42,7 +42,7 @@ URL del Sitio Web
 https://alejomore.github.io/hogar-ideal/index.html
 
 Captura del Sitio Web
-![Captura del sitio web](assets/images/captura-home.png)
+![Captura del sitio web](assets/images/Captura-home.png)
 
 Tecnologías Utilizadas
 HTML5
